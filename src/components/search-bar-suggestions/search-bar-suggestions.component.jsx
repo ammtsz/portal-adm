@@ -15,7 +15,7 @@ const SearchBar = ({
 }) => {
   useEffect(() => {
     setSearchedResults([])
-  }, []);
+  }, [setSearchedResults]);
 
   return (
     <div className="search-bar__suggestions">

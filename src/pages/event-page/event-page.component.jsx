@@ -34,7 +34,7 @@ const EventPage = ({
 
   useEffect(() => {
     getEventFormDatas(match.params.eventId);
-  }, []);
+  }, [getEventFormDatas, match.params.eventId]);
 
   return (
     <ModalContext.Provider value={{ showModal, setShowModal }}>

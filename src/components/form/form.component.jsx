@@ -36,7 +36,7 @@ const Form = ({
 
   useEffect(() => {
     return () => resetFormDatas();
-  }, [showModal]);
+  }, [showModal, resetFormDatas]);
 
   return (
     <section className="form_ container-box">

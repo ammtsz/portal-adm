@@ -38,7 +38,7 @@ const FormEdit = ({
 
   useEffect(() => {
     return () => resetFormDatas();
-  }, []);
+  }, [resetFormDatas]);
 
   return (
     <section className="form_ container-box">

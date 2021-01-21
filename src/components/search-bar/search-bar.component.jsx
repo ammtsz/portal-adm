@@ -30,7 +30,7 @@ const SearchBar = ({
 }) => {
   useEffect(() => {
     filterUsers(searchTerm);
-  }, [searchTerm]);
+  }, [searchTerm, filterUsers]);
 
   return (
     <div className={`search-bar_ ${width_100 ? "search-bar__width-100" : ""}`}>

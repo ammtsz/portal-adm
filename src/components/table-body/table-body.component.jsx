@@ -39,7 +39,7 @@ const TableBody = ({
 }) => {
   useEffect(() => {
     setUsersDisplayArray(usersDisplay(usersSearchArray));
-  }, [usersSearchArray, isApprovedTab, usersApprovedArray, usersPendingArray]);
+  }, [usersSearchArray, isApprovedTab, usersApprovedArray, usersPendingArray, setUsersDisplayArray]);
 
   return (
     <tbody className="table__body">
