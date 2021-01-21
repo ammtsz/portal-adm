@@ -1,0 +1,66 @@
+@import "../../css/global.scss";
+
+.table__body--row-td {
+  padding: 8px;
+  vertical-align: middle;
+  height: $table-row__height;
+}
+
+.table td.table__body--textarea {
+  padding: 0;
+  margin: 0;
+
+  & textarea {
+    resize: both;
+    margin: auto 1px;
+    flex-grow: 1;
+    overflow: auto;
+    border-color: $color__red;
+    border-radius: $border__radius;
+    @include scroll(5px);
+
+    &:disabled {
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+
+// ICONS
+
+.table__body--delete-icon,
+.table__body--edit-icon,
+.table__body--approve-icon {
+  color: $color__grey;
+  padding: 0;
+}
+
+.table__body--delete-icon {
+  margin: 0 5px 0 0;
+  &:hover {
+    color: $color__red;
+  }
+}
+.table__body--edit-icon {
+  margin: 0;
+  &:hover {
+    color: $color__dark-primary;
+  }
+}
+.table__body--approve-icon {
+  margin: 0;
+  &:hover {
+    color: $color__primary;
+  }
+}
+
+// COLORS
+.table__frozen--body {
+  color: $color__dark;
+  background-color: rgba($color__light, $opacity__low);
+}
+
+.table__body {
+  color: $color__dark;
+  background-color: rgba($color__white, 0.8);
+}

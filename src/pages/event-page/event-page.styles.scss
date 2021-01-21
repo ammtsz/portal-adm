@@ -1,0 +1,55 @@
+@import "../../css/global.scss";
+
+.event__page {
+  background-color: rgba($color__black, $opacity__medium);
+}
+
+.event__image--box {
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+  & .event__image {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+}
+
+.event__form--box {
+  padding: 5rem;
+  background-color: rgba($color__light, $opacity__medium);
+  .event__title {
+    color: $color__dark-grey;
+    text-align: center;
+    padding: 20px;
+    & span {
+      color: $color__primary;
+    }
+  }
+
+  .event__btn--attendees{
+    background-color: $color__primary;
+    color: $color__white;
+    display: block;
+    margin-left: auto;
+    &:hover{
+        background-color: $color__dark-primary;
+    }
+  }
+
+  .event__btn--delete{
+    position: absolute;
+    color: darken($color__red, 10);
+    font-size: 20px;
+    z-index: 1;
+    &:hover{
+      color: $color__red;
+    }
+  }
+
+  .event__form {
+    max-width: 1200px;
+    margin: auto;
+  }
+}

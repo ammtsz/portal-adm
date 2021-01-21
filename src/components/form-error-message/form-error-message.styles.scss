@@ -1,0 +1,8 @@
+@import '../../css/global.scss';
+.error-message_{
+    color: $color__red;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 5px
+}

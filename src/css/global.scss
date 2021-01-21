@@ -1,0 +1,113 @@
+// VARIABLES
+
+// font family
+$font-family--text: 'Comfortaa', cursive;
+$font-family--title: 'Comfortaa', cursive;
+$font-family--form: 'Work Sans', sans-serif;
+
+// font size
+$font-size--text: 16px;
+$font-size--title: 32px;
+$font-size--table: 12px;
+
+// colors
+$color__black: rgb(0, 0, 0);
+$color__white: rgb(255, 255, 255);
+$color__dark: rgb(48, 48, 48);
+$color__light: rgb(245, 245, 245);
+$color__grey: rgb(144, 144, 144);
+$color__dark-grey: rgb(87, 87, 87);
+$color__light-grey: rgb(210, 210, 210);
+$color__primary: rgb(0, 124, 138);;
+$color__dark-primary: darken($color__primary, 10);
+$color__red: rgb(172, 0, 0);
+$color__blue: rgb(0, 163, 212);
+
+// borders
+$border__radius: 0.4rem;
+
+// shadows
+$shadow__dark: 0 0 10px $color__black;
+$shadow__light: 0 0 10px $color__white;
+
+
+
+// height and width
+$sidebar__width--hide: 0;
+$sidebar__width--show: 120px;
+$navbar__height: 66px;
+$table-row__height: 45px;
+$footer__height: 3rem;
+
+//opacity
+$opacity__high: 0.5;
+$opacity__medium: 0.8;
+$opacity__low: 0.9;
+
+// media queries
+$mq__sm--max: "(max-width: 576px)";
+$mq__md--max: "(max-width: 768px)";
+$mq__lg--max: "(max-width: 992px)";
+$mq__xl--max: "(max-width: 1200px)";
+
+$mq__sm--min: "(min-width: 576px)";
+$mq__md--min: "(min-width: 768px)";
+$mq__lg--min: "(min-width: 992px)";
+$mq__xl--min: "(min-width: 1200px)";
+
+
+
+// SCROLL
+@mixin scroll ($width: 100%, $height: 100%){
+  /* height or width */
+  &::-webkit-scrollbar {
+    width: $width;
+    height: $height;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: $color__light;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $color__grey;
+    border-radius: 10px;
+  }
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $color__dark-grey;
+  }
+}
+
+@mixin  hideScroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+// CLASSES
+.show__sm {
+  @media #{$mq__sm--min} {
+    display: none;
+  }
+}
+.hide__sm {
+  @media #{$mq__sm--max} {
+    display: none;
+  }
+}
+.hide__md {
+  @media #{$mq__md--max} {
+    display: none;
+  }
+}
+.hide__lg {
+  @media #{$mq__lg--max} {
+    display: none;
+  }
+}

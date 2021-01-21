@@ -1,0 +1,14 @@
+@import "../../css/global.scss";
+
+.error-boundary{
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color__white, 0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: $color__red;
+    font-size: 2rem;
+}

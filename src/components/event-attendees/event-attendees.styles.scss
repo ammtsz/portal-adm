@@ -1,0 +1,60 @@
+@import "../../css/global.scss";
+
+.attendees_ {
+  padding: 2rem;
+  width: 70%;
+  @media #{$mq__lg--max} {
+    width: 100%;
+  }
+  @media #{$mq__sm--max} {
+    padding: 0;
+  }
+}
+
+.attendees__content {
+  width: 100%;
+}
+
+.attendees__header {
+  display: flex;
+  align-items: center;
+
+  .attendees__edit {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $color__primary;
+    }
+  }
+}
+.attendees__body {
+  position: relative;
+}
+
+.attendees__body--list {
+  margin-top: 1rem;
+
+  .attendee_ {
+    i {
+      margin-right: 0.5rem;
+      cursor: pointer;
+      &:hover {
+        color: $color__red;
+      }
+    }
+  }
+}
+.attendees__save {
+  border: none;
+  margin-top: 2rem;
+  background-color: $color__primary;
+  display: block;
+  margin-left: auto;
+
+  &:hover {
+    background-color: $color__dark-primary;
+    color: $color__light;
+  }
+}

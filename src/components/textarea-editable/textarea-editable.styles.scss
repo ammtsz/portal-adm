@@ -1,0 +1,32 @@
+@import "../../css/global.scss";
+
+.textarea_ {
+  display: flex;
+  justify-content: space-between;
+
+  .textarea__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .textarea__buttons--icon {
+      outline: none;
+      &:first-child {
+        color: $color__light-grey;
+        &:hover {
+          color: $color__dark;
+        }
+      }
+      color: $color__light-grey;
+      background-color: transparent;
+      border: none;
+      border-radius: $border__radius;
+      height: 20px;
+      font-size: 14px;
+    
+      &:hover {
+        color: $color__primary;
+      }
+    }
+  }
+}

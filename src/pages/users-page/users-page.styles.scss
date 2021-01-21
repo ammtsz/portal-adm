@@ -1,0 +1,66 @@
+@import "../../css/global.scss";
+
+.table__container {
+  background-color: rgba($color__white, $opacity__medium);
+  box-shadow: $shadow__dark;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  font-size: $font-size--table;
+
+  .table__search-bar {
+    display: none;
+    @media #{$mq__sm--max} {
+      display: unset;
+      position: relative;
+      label {
+        display: block;
+        text-align: right;
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+      }
+      .table__search-bar--input {
+        position: absolute;
+        opacity: 0;
+        &:checked ~ .search-bar_ {
+          @media #{$mq__sm--max} {
+            display: unset;
+          }
+        }
+      }
+    }
+  }
+  .search-bar_ {
+    display: none;
+  }
+  .table__container--menu {
+    display: flex;
+    justify-content: space-between;
+    @media #{$mq__sm--max} {
+      margin-top: 1rem;
+    }
+
+    .table__container--active-btn .button-switch_ {
+      padding: 0.5rem;
+    }
+  }
+
+  .table__container--tabs {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+// FROZEN COLUMNS
+.table__scroll-x {
+  margin-left: 235px;
+
+  min-height: calc(100vh - #{$navbar__height} - 4rem);
+
+  overflow: auto;
+  @include scroll(100%, 10px);
+
+  @media #{$mq__md--max} {
+    margin-left: 150px;
+  }
+}

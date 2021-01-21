@@ -1,0 +1,43 @@
+@import "../../css/global.scss";
+.calendar_ {
+  height: auto;
+  width: 90%;
+  margin: 4rem auto 1rem auto;
+  text-align: center;
+  color: $color__light;
+
+  & iframe {
+    height: calc(100vh - #{$navbar__height} - 1rem);
+    min-width: 100%;
+    opacity: 0.9;
+  }
+
+  // FULL CALENDAR
+  & .fc {
+    & .fc-button-primary {
+      background-color: $color__primary;
+      border-color: $color__white;
+      &:disabled {
+        background-color: $color__dark-primary;
+        border-color: $color__white;
+      }
+      &:hover {
+        background-color: $color__dark-primary;
+        border-color: $color__white;
+      }
+    }
+    & .fc-daygrid-event {
+      color: $color__primary;
+      text-shadow: 0 0 2px $color__dark-grey;
+    }
+    & .fc-daygrid-event-dot {
+      border-color: $color__primary;
+    }
+  }
+
+  p{
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    text-align: start;
+  }
+}

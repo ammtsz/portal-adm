@@ -1,0 +1,10 @@
+@import '../../css/global.scss';
+
+.carousel-item{
+    height: calc(100vh - #{$navbar__height});
+    img{
+        height: calc(100vh - #{$navbar__height});
+        overflow: hidden;
+        object-fit: cover;
+    }
+}

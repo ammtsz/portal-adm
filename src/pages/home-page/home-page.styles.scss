@@ -1,0 +1,59 @@
+@import "../../css/global.scss";
+
+.home_ {
+  position: relative;
+  overflow: auto;
+
+  .home__cover {
+    height: calc(100vh - #{$navbar__height});
+    width: 100%;
+    vertical-align: middle;
+    margin: auto;
+  }
+
+  .home__icons {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: auto;
+
+    align-content: center;
+    background-color: rgba($color__white, 0.8);
+    z-index: 1;
+    min-width: 25vh;
+    padding: 2rem 1.5rem;
+
+    @media #{$mq__sm--max} {
+      padding: 30px;
+      width: 100%;
+      left: 0;
+    }
+
+    @include hideScroll;
+
+    .home__icon {
+      padding: 20px;
+      text-align: center;
+      color: $color__black;
+      cursor: pointer;
+
+      & i {
+        font-size: 8vh;
+      }
+
+      & .home__icon--text {
+        font-size: 2.5vh;
+      }
+
+      &:hover {
+        color: $color__primary;
+      }
+    }
+  }
+}

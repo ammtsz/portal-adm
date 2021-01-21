@@ -1,0 +1,59 @@
+@import '../../css//global.scss';
+.contact__container{
+    padding-top:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100vh - #{$navbar__height});
+    background-color: rgba($color__white, $opacity__low);
+}
+
+.contact__people{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    @media #{$mq__lg--max} {
+        flex-wrap: wrap;
+      }
+    
+    .contact__people--message{
+        width: 45%;
+        margin: auto;
+        @media #{$mq__lg--max} {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    
+    .contact__people--card {
+        text-align: center;
+        margin: 30px 10px;
+        & img{
+        border-radius: 50%;
+        }
+        & p, & h4{
+            margin: 0;
+        }
+    }
+}
+
+
+.contact__contacts{
+    display: block;
+    text-align: center;
+    background-color: $color__black;
+
+    .contact__contacts--container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 5rem;
+        color: $color__light-grey;
+    
+        & i{
+            margin-right: 5px;
+        }
+    }
+}
+

@@ -1,0 +1,35 @@
+@import "../../css/global.scss";
+
+.filter__btn--cancel {
+  background-color: $color__light-grey;
+  border: none;
+
+  &:hover {
+    background-color: $color__red;
+    color: $color__light;
+  }
+}
+
+.filter__btn--ok {
+  border: none;
+
+  &:hover {
+    background-color: $color__primary;
+    color: $color__light;
+  }
+}
+
+.filter__btn--selection {
+  background: none;
+  border: none;
+  color: $color__dark-grey;
+  &:hover {
+    color: $color__primary;
+  }
+}
+
+*:disabled {
+  &:hover {
+    color: initial;
+  }
+}

@@ -1,0 +1,34 @@
+@import "../../css/global.scss";
+
+.events__container {
+  background-color: rgba($color__black, $opacity__medium);
+  height: auto;
+
+  > .cards-collection_ .cards-collection__title{
+    cursor: default;
+  }
+}
+
+.events__calendar {
+  padding-top: 50px;
+  
+}
+
+.events__modal {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 5rem;
+  border-radius: $border__radius;
+  background-color: rgba($color__light, 0.8);
+
+  transition: 0.5s;
+  box-shadow: $shadow__dark;
+  transform: scale(0);
+  height: 0;
+
+  @media #{$mq__sm--max} {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+}

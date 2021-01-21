@@ -1,0 +1,48 @@
+@import "../../css/global.scss";
+
+.settings__container {
+  display: block;
+  height: 100%;
+
+}
+.settings__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  height: 100%;
+  margin: auto;
+}
+.settings__card {
+  height: 240px;
+  min-width: 240px;
+  margin: 30px;
+
+  color: $color__light;
+  border-radius: $border__radius;
+  box-shadow: $shadow__dark;
+  align-self: center;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  & i {
+    font-size: 110px;
+    align-self: center;
+  }
+}
+
+
+// COLORS
+.settings__card-adm {
+  background-color: $color__dark;
+  &:hover {
+    background-color: $color__grey;
+  }
+}
+.settings__card-user {
+  background-color: $color__dark-primary;
+  &:hover {
+    background-color: $color__primary;
+  }
+}

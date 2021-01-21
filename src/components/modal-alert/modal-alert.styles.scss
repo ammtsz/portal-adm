@@ -1,0 +1,46 @@
+@import "../../css/global.scss";
+
+.modal-alert__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba($color__dark, 0.75);
+  z-index: 9;
+  // display: none;
+}
+
+.modal-alert__box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 500px;
+  background-color: $color__light;
+  box-shadow: $shadow__dark;
+  border-radius: $border__radius;
+  z-index: 10;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.modal-alert__message {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.modal-alert__message--title {
+}
+
+.modal-alert__message--text {
+}
+
+.modal-alert__button {
+  width: 100%;
+}

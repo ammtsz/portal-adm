@@ -1,0 +1,32 @@
+@import '../../css/global.scss';
+
+.primary-button_{
+    height: 2.5rem;
+    margin-top: 1rem;
+    background-color: $color__primary;
+    border: none;
+    &:hover, &:active, &:visited{
+        background-color: $color__dark-primary;
+    }
+}
+
+
+.secondary-button_{
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    background-color: rgba($color__light, 0.5);
+    border: none;
+    color: $color__grey;
+
+    &:hover{
+        background-color: $color__grey;
+        color: $color__light;
+    }
+
+    &:disabled{
+        &:hover{
+            background-color: rgba($color__light, 1);
+            color: $color__dark-grey;
+        }
+    }
+}

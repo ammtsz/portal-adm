@@ -1,0 +1,20 @@
+@import "../../css//global.scss";
+
+.table__container--tab {
+    margin-left: 1px;
+    padding: 0.5rem 1rem;
+    color: $color__black;
+    background-color: $color__light-grey;
+    border-radius: $border__radius $border__radius 0 0;
+    cursor: pointer;
+
+    &.active {
+      color: $color__white;
+      background-color: rgba($color__dark-primary, 0.9);
+    }
+
+    &:hover{
+      color: $color__white;
+      background-color: rgba($color__dark-primary, 1);
+    }
+  }

@@ -1,0 +1,42 @@
+@import "../../css/global.scss";
+
+.form_ {
+  font-family: $font-family--form;
+  width: calc(100vw - 10rem);
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 8vh 8vw;
+  background-color: rgba($color__white, $opacity__low);
+  border-radius: $border__radius;
+  box-shadow: $shadow__dark;
+
+  @media #{$mq__md--max} {
+    width: calc(100vw - 2rem);
+    margin: 2.5rem auto;
+  }
+
+  @media #{$mq__sm--max} {
+    width: calc(100vw - 1.5rem);
+    margin: 1.5rem auto;
+  }
+}
+
+.form__title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  span {
+    padding: 0;
+  }
+}
+
+input.btn {
+  background-color: $color__primary;
+  color: $color__white;
+  &:hover {
+    background-color: $color__dark-primary;
+    color: $color__white;
+  }
+}

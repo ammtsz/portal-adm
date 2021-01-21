@@ -1,0 +1,16 @@
+@import "../../css/global.scss";
+
+.form__title {
+  a {
+    color: $color__primary;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+      color: $color__dark-primary;
+    }
+  }
+
+  span {
+    color: $color__primary;
+  }
+}

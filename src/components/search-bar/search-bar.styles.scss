@@ -1,0 +1,30 @@
+@import "../../css/global.scss";
+
+.search-bar_ {
+  position: relative;
+
+  &.search-bar__width-100 {
+    margin: 0;
+    width: 100%;
+    
+  }
+
+  @media #{$mq__sm--max} {
+    margin: 25px 25px;
+  }
+  @media #{$mq__xl--min} {
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// icons
+.search-bar__icon {
+  color: $color__light;
+  background-color: $color__dark;
+  cursor: pointer;
+}
+.search-bar__icon:hover {
+  background-color: $color__primary;
+}

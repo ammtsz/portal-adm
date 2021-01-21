@@ -1,0 +1,118 @@
+@import "../../css/global.scss";
+
+.card_ {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.card__container {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin: 1rem;
+  box-shadow: $shadow__dark;
+  min-width: 320px;
+  @media #{$mq__sm--max} {
+    min-width: 90vw;
+  }
+
+  &:hover {
+    box-shadow: $shadow__light;
+
+    & .card__background--img {
+      transform: scale(1.1);
+      transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    }
+
+    & .card__content {
+      background-color: rgba($color__black, 0.7);
+      overflow: auto;
+    }
+
+    & .card__content--eventName,
+    .card__content--infos {
+      display: none;
+    }
+
+    & .card__content--moreInfos {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      padding: 2rem;
+      height: 100%;
+    }
+
+    & .card__content--btn {
+      display: block;
+      background-color: rgba($color__dark, $opacity__high);
+      color: $color__light-grey;
+      margin: 0.3rem auto;
+      max-width: 700px;
+      width: 100%;
+      &:last-child {
+        margin-bottom: 1rem;
+      }
+
+      &:hover {
+        color: $color__white;
+
+        &.edit_ {
+          background-color: rgba($color__primary, $opacity__high);
+        }
+        &.delete_ {
+          background-color: rgba($color__red, $opacity__high);
+        }
+      }
+    }
+  }
+}
+
+.card__background--img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card__content {
+  position: relative;
+  min-width: 350px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: $color__white;
+  background-color: rgba($color__black, 0.4);
+  text-shadow: 2px 2px 10px $color__black, -2px -2px 10px $color__black;
+
+  height: 300px;
+  @include scroll(10px);
+
+  .card__content--eventName {
+    margin: 2.5rem 1rem 0 1rem;
+  }
+
+  .card__content--infos {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 1rem;
+
+    .card__infos--text {
+      display: inline;
+      padding: 0 1rem;
+    }
+  }
+  
+  .card__content--moreInfos {
+    display: none;
+  }
+
+  .card__content--btn {
+    display: none;
+  }
+}

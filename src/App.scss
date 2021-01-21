@@ -1,0 +1,32 @@
+@import "./css/global.scss";
+
+body {
+  font-family: $font-family--text;
+  font-size: $font-size--text;
+  font-weight: 400;
+  overflow: auto;
+  @include scroll(15px);
+}
+
+// ======================================================================
+
+.page__background {
+  background-image: url("./assets/logo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-size: 40vw;
+}
+
+.page__container {
+  display: grid;
+  grid-template-columns: $sidebar__width--hide auto;
+}
+
+.page__content {
+  position: relative;
+  background-color: rgba($color__white, $opacity__high);
+  box-sizing: border-box;
+  overflow-x: auto;
+}

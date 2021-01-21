@@ -1,0 +1,25 @@
+@import '../../css/global.scss';
+
+h6{
+    margin: 0;
+    font-weight: 600;
+}
+
+input[type='radio']{
+    margin-right: 5px
+}
+
+.form__section{
+    border-top: 1px solid $color__light-grey;
+    padding: 40px 0;
+
+    &:first-child{
+        border-top: none;
+        padding: 0;
+
+    }
+}
+
+.form__cpf-error{
+    color: $color__red;
+}

@@ -1,0 +1,25 @@
+@import "../../css/global.scss";
+
+.login_ {
+  .login__signin--help {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .login__signin--remind,
+  .login__signin--forget-password {
+    font-size: 0.8rem;
+    color: $color__white;
+  }
+
+  .login__signin--forget-password {
+    text-decoration: underline;
+    // &:hover{
+    color: $color__grey;
+    // }
+  }
+
+}

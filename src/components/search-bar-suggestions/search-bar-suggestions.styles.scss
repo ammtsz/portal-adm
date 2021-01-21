@@ -1,0 +1,37 @@
+@import "../../css/global.scss";
+
+.search-bar__suggestions {
+  position: absolute;
+  width: 100%;
+  background-color: rgba($color__white, 0.9);
+  border: 1px solid lightgrey;
+  border-radius: 0 0 $border__radius $border__radius;
+  max-height: 10rem;
+  overflow: auto;
+  padding: 1rem 0;
+  @include scroll(10px);
+
+  .search-bar__suggestions--close{
+    display: block;
+    margin-left: auto;
+    background-color: transparent;
+    color: $color__grey;
+    border: none;
+    padding: 0 1rem;
+    outline: none;
+    &:hover{
+      color: $color__red;
+    }
+  }
+
+  .search-bar__suggestions--item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    cursor: pointer;    
+
+    &:hover {
+      background-color: $color__light-grey;
+    }
+  }
+}

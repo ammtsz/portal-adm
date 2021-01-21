@@ -1,0 +1,40 @@
+@import "../../css/global.scss";
+
+// FROZEN COLUMNS
+.table__frozen--head,
+.table__frozen--body {
+  position: absolute;
+  top: auto;
+  overflow: auto;
+  @include hideScroll();
+  &:first-child {
+    overflow: hidden;
+    @media #{$mq__md--max} {
+      padding-left: 7px;
+    }
+  }
+  @include scroll(100%, 5px);
+}
+
+.table__frozen--head {
+  height: calc(#{$table-row__height} + 1px);
+}
+
+.table__frozen--body {
+  height: $table-row__height;
+}
+.table__frozen--col-1 {
+  left: 10px;
+  width: 55px;
+  @media #{$mq__md--max} {
+    width: 45px;
+  }
+}
+.table__frozen--col-2 {
+  left: 65px;
+  width: 180px;
+  @media #{$mq__md--max} {
+    left: 55px;
+    width: 105px;
+  }
+}

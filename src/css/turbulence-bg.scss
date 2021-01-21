@@ -1,0 +1,30 @@
+@import '../css/global.scss';
+
+.turbulence__background{
+    overflow: hidden;
+    background-image: url("../assets/lg10.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    transform: scale(1.1);
+    height: calc(100vh - #{$navbar__height} + 5px);
+    width: calc(100vw + 5px);
+    filter: url("#turbulence");
+}
+
+
+
+// SECOND IMAGE
+
+// .turbulence__water{
+//     background-image: url("../assets/lg7.jpg");
+//     position: absolute;
+//     top: 0px;
+//     left: 0px;
+//     height: 100%;
+//     width: 100%;
+//     opacity: 0.5;
+// }

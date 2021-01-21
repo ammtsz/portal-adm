@@ -1,0 +1,48 @@
+@import "../../css//global.scss";
+
+th{
+  height: $table-row__height;
+}
+
+.table__head--row th{
+  border-top: none;
+}
+
+.table__thead--column-name {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+// CHECKBOX
+.table__thead--checkbox {
+  opacity: 0;
+  transform: translate(4px, 1px);
+  cursor: pointer;
+  z-index: 1;
+}
+.table__thead--check-icon {
+  transform: translate(-8px, 3px);
+}
+
+// ICONS
+.table__head--filter-icon,
+.table__head--copy-icon {
+  cursor: pointer;
+  &:hover {
+    color: $color__primary;
+  }
+}
+
+// COLORS
+.table__frozen--head {
+  color: $color__light;
+  background-color: rgba($color__dark-primary, $opacity__low);
+}
+
+.table__head--row {
+  
+  color: $color__light;
+  background-color: rgba($color__dark-primary, $opacity__medium);
+}
+
