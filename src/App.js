@@ -26,7 +26,7 @@ const App = ({ history, currentUser, setUserAuth, getUsersFromDb }) => {
     setUserAuth()
     getUsersFromDb()
     return () => setUserAuth();
-  }, []);
+  }, [setUserAuth, getUsersFromDb]);
 
   return (
     <div className="page__background">

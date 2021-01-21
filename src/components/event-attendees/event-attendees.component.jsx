@@ -47,7 +47,7 @@ const AttendeesList = ({
   useEffect(() => {
     setEventAttendeesIds(eventFormDatas.attendees);
     return () => setSearchTerm("")
-  }, [eventFormDatas]);
+  }, [eventFormDatas, setEventAttendeesIds, setSearchTerm]);
 
   return (
     <div className="attendees_">

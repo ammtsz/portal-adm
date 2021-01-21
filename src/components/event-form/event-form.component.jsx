@@ -59,7 +59,13 @@ const EventForm = ({
       resetEventForm();
       setEventAttendeesIds([]);
     };
-  }, []);
+  }, [
+    imageUploadListener,
+    setIsEditingAttendees,
+    setShowSuggestions,
+    resetEventForm,
+    setEventAttendeesIds,
+  ]);
 
   return (
     <form onSubmit={(event) => submitForm(event)} className="new-event__form">

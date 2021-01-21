@@ -34,7 +34,7 @@ const Events = ({ match, allEvents, eventsYears, getEventsFromFirestore }) => {
 
   useEffect(() => {
     getEventsFromFirestore();
-  }, []);
+  }, [getEventsFromFirestore]);
 
   return (
     <ModalContext.Provider value={{ showModal, setShowModal }}>
