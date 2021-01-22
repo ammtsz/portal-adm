@@ -1,9 +1,9 @@
 // VARIABLES
 
 // font family
-$font-family--text: 'Comfortaa', cursive;
-$font-family--title: 'Comfortaa', cursive;
-$font-family--form: 'Work Sans', sans-serif;
+$font-family--text: "Comfortaa", cursive;
+$font-family--title: "Comfortaa", cursive;
+$font-family--form: "Work Sans", sans-serif;
 
 // font size
 $font-size--text: 16px;
@@ -18,7 +18,7 @@ $color__light: rgb(245, 245, 245);
 $color__grey: rgb(144, 144, 144);
 $color__dark-grey: rgb(87, 87, 87);
 $color__light-grey: rgb(210, 210, 210);
-$color__primary: rgb(0, 124, 138);;
+$color__primary: rgb(0, 124, 138);
 $color__dark-primary: darken($color__primary, 10);
 $color__red: rgb(172, 0, 0);
 $color__blue: rgb(0, 163, 212);
@@ -29,8 +29,6 @@ $border__radius: 0.4rem;
 // shadows
 $shadow__dark: 0 0 10px $color__black;
 $shadow__light: 0 0 10px $color__white;
-
-
 
 // height and width
 $sidebar__width--hide: 0;
@@ -55,10 +53,8 @@ $mq__md--min: "(min-width: 768px)";
 $mq__lg--min: "(min-width: 992px)";
 $mq__xl--min: "(min-width: 1200px)";
 
-
-
 // SCROLL
-@mixin scroll ($width: 100%, $height: 100%){
+@mixin scroll($width: 100%, $height: 100%) {
   /* height or width */
   &::-webkit-scrollbar {
     width: $width;
@@ -81,7 +77,7 @@ $mq__xl--min: "(min-width: 1200px)";
   }
 }
 
-@mixin  hideScroll {
+@mixin hideScroll {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   &::-webkit-scrollbar {
@@ -89,25 +85,68 @@ $mq__xl--min: "(min-width: 1200px)";
   }
 }
 
-
 // CLASSES
 .show__sm {
   @media #{$mq__sm--min} {
-    display: none;
+    position: absolute;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
   }
 }
 .hide__sm {
   @media #{$mq__sm--max} {
-    display: none;
+    position: absolute;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
   }
 }
 .hide__md {
   @media #{$mq__md--max} {
-    display: none;
+    position: absolute;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
   }
 }
 .hide__lg {
   @media #{$mq__lg--max} {
-    display: none;
+    position: absolute;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
   }
+}
+
+.hide {
+    position: absolute;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }

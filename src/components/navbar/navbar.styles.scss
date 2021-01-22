@@ -48,8 +48,10 @@
 
     .dropdown-item {
       cursor: pointer;
-      &:hover {
+      &:hover,
+      &:active {
         color: $color__primary;
+        background-color: $color__light-grey;
       }
       // temp - should be deleted after creating profile and settings pages
       &.disabled_ {

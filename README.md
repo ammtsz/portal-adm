@@ -1,8 +1,11 @@
+[https://portal-adm.vercel.app/](https://portal-adm.vercel.app/)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, after run `npm install`, you can run:
 
 ### `npm start`
 

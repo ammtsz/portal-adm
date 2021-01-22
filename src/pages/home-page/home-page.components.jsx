@@ -34,7 +34,7 @@ const Home = ({ history }) => {
             className="home__icon"
             onClick={() => {history.push(`${page.linkUrl}`)}}
           >
-            <i className={page.icon} />
+            <i className={page.icon}/>
             <h6 className="home__icon--text   mt-2">{page.label.toUpperCase()}</h6>
           </div>
         ))}
