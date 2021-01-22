@@ -1,0 +1,35 @@
+@import "../../css/global.scss";
+
+.notfound__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - #{$navbar__height});
+    background-color: $color__dark;
+    color: $color__white;
+    text-align: center;
+
+    img{
+        width: 80vw;
+        max-width: 60vh;
+    }
+
+    .notfound__warning{
+        font-size: 1.2rem;
+    }
+
+    .notfound__redirect{
+        color: $color__primary;
+        background-color: $color__light;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: 0.2s;
+
+        &:hover{
+            background-color: $color__primary;
+            color: $color__light;
+        }
+    }
+
+}

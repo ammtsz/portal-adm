@@ -8,6 +8,7 @@ import Sidebar from "./components/sidebar/sidebar.component";
 import Footer from "./components/footer/footer.component.jsx";
 import Spinner from "./components/spinner/spinner.component";
 import ErrorBoundary from "./components/error-boundary/error-boundary";
+import NotFound from "./pages/404-page/404-page.component"
 
 import SIDEBAR_ROUTES from "./datas/routes.data";
 
@@ -59,6 +60,10 @@ const App = ({ history, currentUser, setUserAuth, getUsersFromDb }) => {
                     {route.main}
                   </Route>
                 ))}
+                <Route path="*" render ={() =>
+                  <NotFound />
+                }
+                />
               </Switch>
             </Suspense>
           </ErrorBoundary>
