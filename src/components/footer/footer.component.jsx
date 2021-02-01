@@ -9,7 +9,7 @@ const Footer = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://mmatsuzoe.herokuapp.com/"
+          href="https://mmatsuzoe.vercel.app/"
         >
           Mayumi Matsuzoe
         </a>
